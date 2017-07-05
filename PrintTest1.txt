@@ -1,0 +1,9 @@
+public class PrintTest{
+public static void main(String args[]){
+	int x = 0;
+	x = 2147483647;
+	double lf;
+	lf = 2147483648.1234567;
+	System.out.println("int형 정수로 표현 할 수있는 최대값은"+x+"이고doble은 int보다 큰"+lf+"값을 표현할 수 있다.");
+}
+}
