@@ -1,6 +1,5 @@
 package kdata.manager;
 
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,8 @@ public class ManagerTest {
 		
 		while(i!=8){
 			System.out.println("1. Insert 2. SelectAll 3. SearchName "
-					+ "4. 수강신청 5. 수강삭제 6. 수강출력 7. 성적입력 8. 종료");
+					+ "4. 수강신청 5. 수강삭제 6. 수강출력 7. 성적입력 8. 과목별 성적 출력 9. 종료");
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			i = sc.nextInt();
 			switch(i){
@@ -105,8 +105,11 @@ public class ManagerTest {
 					System.out.println("입력되었습니다.");
 				else
 					System.out.println("없는 학번입니다.");
+				
+			case 8:
+				System.out.println("강의코드\t강의명\t평균점수");
+			
 			}
-
 		}
 		System.out.println("프로그램을 종료합니다.");
 	}
